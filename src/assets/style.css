@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Comfortaa:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* ~6px base size (1rem = 6px) */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Comfortaa', sans-serif;
+  color: #283618; 
+  background-color: #fefae0;
+}
+
+.app {
+  max-width: 600px;
+  width: 90%;
+  min-height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  padding: 1.5rem 0;
+}
+
+h1 {
+  font-family: 'Borel', cursive;
+  text-align: center;
+  background-color: #283618;
+  color: white;
+  font-size: 3rem;
+  padding: 1.5rem 0 1rem;
+}
+
+.add-form {
+  background-color: #dda15e;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.add-form h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.add-form div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.add-form select,
+.add-form input {
+  font-size: 1.8rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+}
+
+button,
+select,
+input {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #283618;
+  color: #fefae0;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+}
+
+.list {
+  background-image: url(img/paper-bg.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  color: #fefae0;
+  padding: 1.5rem 0;
+  overflow-y: auto;
+}
+
+.list ul {
+  list-style: none;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list li {
+  color: #283618;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(254, 250, 224, 0.8);
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.list input[type='checkbox'] {
+  height: 2rem;
+  width: 2rem;
+  accent-color: #283618;
+}
+
+.list li button {
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+}
+
+.actions {
+  background-color: #606c38;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.actions button,
+.actions select {
+  padding: 0.5rem 1.2rem;
+  font-size: 1.4rem;
+  margin: 0 0.6rem;
+  border-radius: 2rem;
+}
+
+.stats {
+  background-color: #bc6c25;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
